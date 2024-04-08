@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Holy Trinity Academy [DATABASE] | NOT READY TO SCAN</title>
+        <link rel="stylesheet" href="bin/styles/customAttributes.css">
+        
+        <!-- WEBSITE RESULTS ARE DIFFERENT TO THE ACTUAL APPLICATION RESULT -->
+        <!-- ALL CSS ARE CODED FOR 1280x720 RESOLUTION ONLY -->
+        <!-- ANY CHANGES WOULD RESULT INTO WEIRD MESS -->
+
+        <!-- BE SURE TO EXECUTE LESS FIRST -->
+        <!-- UNCOMMENT THIS ON PUBLISH -->
+        <!-- <link rel="stylesheet" href="bin/styles/main.css"> -->
+
+        <!-- DEBUG MODE -->
+            <!-- COMMENT OUT ON PRODUCTION -->
+            <link rel="stylesheet/less" type="text/css" href="../LESS/main.less" />
+            <script defer src="https://cdn.jsdelivr.net/npm/less" ></script>
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+        <script defer src="bin/scripts/scanner.js"></script>
+        <script defer src="bin/scripts/script.js"></script>
+    </head>
+
+    <body>
+        <aside class="informations">
+            <div class="info_bg">
+                <img alt="person_picture" id="person_picture" src="bin/images/info_DEFAULT_PFP.svg">
+                <img alt="pfp_hta_icon" id="hta_icon" src="../favicon.ico">
+                <div class="person_informations">
+                    <br unselect>
+                    <div id="TYPE_TEXT">
+                        <h3>N/A</h3>
+                        <hr/>
+                        <p unselect>TYPE</p>
+                    </div>
+                    <br unselect>
+                    <div id="NAME_TEXT">
+                        <h3>N/A</h3>
+                        <hr/>
+                        <p unselect>NAME</p>
+                    </div>
+                    <br unselect>
+                    <div id="YEAR_TEXT">
+                        <h3>N/A</h3>
+                        <hr/>
+                        <p unselect>YEAR</p>
+                    </div>
+                    <br unselect>
+                    <div id="SECTION_TEXT">
+                        <h3>N/A</h3>
+                        <hr/>
+                        <p unselect>SECTION</p>
+                    </div>
+                    <br unselect>
+                    <div id="ID_TEXT">                     
+                        <h3>N/A</h3>
+                        <hr/>
+                        <p unselect>ID NO.</p>
+                    </div>
+                </div>
+            </div>
+            <input type="text" id="rfid_code" placeholder="##RFID INPUT##" onblur="scanner.unfocused()"/>
+        </aside>
+
+        <main class="main_nav">
+            <nav class="nav_buttons">
+                <div data-target="nav_home" data-fn="button" data-fnSelected="1">HOME</div>
+                <div data-target="nav_student" data-fn="button" data-fnSelected="0">STUDENTS</div>
+                <div data-target="nav_teacher" data-fn="button" data-fnSelected="0">TEACHERS</div>
+                <div data-target="nav_staff" data-fn="button" data-fnSelected="0">STAFF</div>
+                <div data-target="nav_misc" data-fn="button" data-fnSelected="0" style="font-size: 20px; padding-top: 34px;">MISCELLANEOUS</div>
+            </nav>
+            <section class="nav_lists">
+                <div class="nav_home" data-navList data-show="1">
+                    <div>
+                        <span>
+                            <h1>
+                                HOLY TRINITY ACADEMY<br>
+                                DATABASE
+                                <hr>
+                                <p>
+                                    PROTOTYPE VERSION 0.0.1<br><br>
+                                    CREATED BY GRADE 11-ICT GROUP 5
+                                </p>
+                            </h1>
+                        </span>
+                    </div>
+                    <span>
+                        <img src="../favicon.ico" alt="hta_logo">
+                    </span>
+                </div>
+                <div class="nav_student" data-navList data-show="0">
+                    [list for students records etc | students attendance]
+                </div>
+                <div class="nav_teacher" data-navList data-show="0">
+                    [list for teachers records etc | teachers attendance]
+                </div>
+                <div class="nav_staff" data-navList data-show="0">
+                    [list for staff members etc | janitors/canteen]
+                </div>
+                <div class="nav_misc" data-navList data-show="0">
+                    <div AboutSection>
+                        <h1>ABOUT</h1>
+                        <br>
+                        <h3>
+                            This application was made for fun.
+                        </h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
