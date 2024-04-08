@@ -14,3 +14,6 @@ RFID Reader that I'm currently using is `SL040 Ver1.1`
 
 ## Managing the UI
 Its currently using *electron.js* because it's easy to design it using html and css but at a cost of large file size.
+
+## PREVIEW
+![](readmeIMG/preview.png)
