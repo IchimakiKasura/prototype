@@ -1,6 +1,11 @@
+:root {
+    // easily change values without SCROLLING DOWN
+    --INFORMATION-BACKGROUND: url(../Application/bin/images/info_BG.jpg);
+}
+
 @font-face {
     font-family: "College";
-    src: url("../Application/bin/fonts/College.ttf");
+    src: url(../Application/bin/fonts/College.ttf);
 }
 * {
     margin: 0;
@@ -15,7 +20,7 @@ body {
 }
 
 .informations {
-    background-image: url(../Application/bin/images/info_BG.jpg);
+    background-image: var(--INFORMATION-BACKGROUND);
     background-repeat: no-repeat;
     background-size: 180%;
     background-position: 50%;

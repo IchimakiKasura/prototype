@@ -25,3 +25,5 @@ document.querySelectorAll("[data-fn='button']").forEach(e=>{
         e.setAttribute("data-fnSelected", "1")
     })
 })
+
+console.log(student)
