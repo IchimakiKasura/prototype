@@ -1,6 +1,7 @@
 'use strict';
 const { app, BrowserWindow } = require('electron');
 const path = require('node:path');
+const { usb } = require("usb")
 
 let mWin = ""
 
@@ -10,17 +11,20 @@ function cW() {
         height: 720,
         webPreferences: {
             nodeIntegration: true,
-            preload: path.join(__dirname, "preload.js")
+            preload: path.join(__dirname, "preload.js"),
         },
         resizable: false,
         darkTheme: true,
         icon: "favicon.ico",
-        title: "Holy Trinity Academy [DATABASE] | (LOADING)"
+        title: "Holy Trinity Academy [DATABASE] | (LOADING) [ RFID READER STATUS: DISCONNECTED ]",
+        show: false
     });
 
     mWin.setMenuBarVisibility(false)
 
     mWin.loadFile("Application/index.html")
+
+    mWin.once("ready-to-show", ()=>mWin.show())
 }
 
 app.whenReady().then(cW);

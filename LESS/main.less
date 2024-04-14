@@ -79,9 +79,15 @@ body {
         outline: none;
         margin: 0 !important;
         top: 610px;
+        opacity: 0.2;
+        transition: opacity 0.5s;
 
         &::placeholder {
             text-align: center;
+        }
+
+        &:hover {
+            opacity: 1;
         }
     }
 }
@@ -124,7 +130,7 @@ body {
                 border-radius: 20px 0 0 0;
             }
     
-            &:nth-child(5)
+            &:nth-child(3)
             {
                 border-radius: 0 20px 0 0;
             }
@@ -186,12 +192,34 @@ body {
         }
     }
 
+    .nav_records {
+        padding: 10px;
+        padding-right: 15px;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 81vh;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
     .nav_misc {
         padding: 30px;
 
         h1 {
             font-size: 40px;
             font-family: "College";
+        }
+        
+        [AboutSection] {
+            overflow: hidden;
+            overflow-y: scroll;
+            height: 75vh;
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
     }
 }

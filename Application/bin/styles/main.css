@@ -1,6 +1,9 @@
+:root {
+  --INFORMATION-BACKGROUND: url(../images/info_BG.jpg);
+}
 @font-face {
   font-family: "College";
-  src: url("../fonts/College.ttf");
+  src: url(../fonts/College.ttf);
 }
 * {
   margin: 0;
@@ -13,7 +16,7 @@ body {
   display: flex;
 }
 .informations {
-  background-image: url("../images/info_BG.jpg");
+  background-image: var(--INFORMATION-BACKGROUND);
   background-repeat: no-repeat;
   background-size: 180%;
   background-position: 50%;
@@ -57,7 +60,8 @@ body {
   box-shadow: 0 0 2px 0 black;
   width: 70%;
 }
-.informations .info_bg #rfid_code {
+.informations #rfid_code {
+  position: relative;
   width: 286px;
   height: 49px;
   font-size: 30px;
@@ -65,9 +69,15 @@ body {
   border-radius: 10px;
   outline: none;
   margin: 0 !important;
+  top: 610px;
+  opacity: 0.2;
+  transition: opacity 0.5s;
 }
-.informations .info_bg #rfid_code::placeholder {
+.informations #rfid_code::placeholder {
   text-align: center;
+}
+.informations #rfid_code:hover {
+  opacity: 1;
 }
 .main_nav [data-show="0"] {
   display: none;
@@ -99,7 +109,7 @@ body {
 .main_nav .nav_buttons [data-fn="button"]:nth-child(1) {
   border-radius: 20px 0 0 0;
 }
-.main_nav .nav_buttons [data-fn="button"]:nth-child(5) {
+.main_nav .nav_buttons [data-fn="button"]:nth-child(3) {
   border-radius: 0 20px 0 0;
 }
 .main_nav .nav_buttons [data-fnSelected="1"] {
@@ -142,6 +152,10 @@ body {
 .main_nav .nav_home span img {
   height: 450px;
   opacity: 0.09;
+}
+.main_nav .nav_records {
+  padding: 10px;
+  padding-right: 15px;
 }
 .main_nav .nav_misc {
   padding: 30px;

@@ -1,3 +1,5 @@
+import { scanner } from "./module/scanner.js"
+
 scanner.onEnter()
 
 // focuses on the input
@@ -26,4 +28,4 @@ document.querySelectorAll("[data-fn='button']").forEach(e=>{
     })
 })
 
-console.log(student)
+document.querySelector("#rfid_code").addEventListener("blur", scanner.unfocused)

@@ -4,8 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Holy Trinity Academy [DATABASE] | NOT READY TO SCAN</title>
+        <title>Holy Trinity Academy [DATABASE] | NOT READY TO SCAN | [ RFID READER STATUS: DISCONNECTED ]</title>
         <link rel="stylesheet" href="bin/styles/customAttributes.css">
+        <link rel="stylesheet" href="bin/styles/table.css">
         
         <!-- WEBSITE RESULTS ARE DIFFERENT TO THE ACTUAL APPLICATION RESULT -->
         <!-- ALL CSS ARE CODED FOR 1280x720 RESOLUTION ONLY -->
@@ -21,8 +22,7 @@
             <script defer src="https://cdn.jsdelivr.net/npm/less" ></script>
         <!-- /////////////////////////////////////////////////////////////// -->
 
-        <script defer src="bin/scripts/scanner.js"></script>
-        <script defer src="bin/scripts/script.js"></script>
+        <script defer type="module" src="bin/scripts/script.js"></script>
     </head>
 
     <body>
@@ -53,26 +53,30 @@
                     <div id="SECTION_TEXT">
                         <h3>N/A</h3>
                         <hr/>
-                        <p unselect>SECTION</p>
+                        <p unselect>SECTION / CLASS</p>
                     </div>
                     <br unselect>
-                    <div id="ID_TEXT">                     
+                    <div id="ID_TEXT">
                         <h3>N/A</h3>
                         <hr/>
                         <p unselect>ID NO.</p>
                     </div>
+                    <br unselect>
+                    <div id="BAL_TEXT">                     
+                        <h3>0</h3>
+                        <hr/>
+                        <p unselect>CURRENT BALANCE</p>
+                    </div>
                 </div>
             </div>
-            <input type="text" id="rfid_code" placeholder="##RFID INPUT##" onblur="scanner.unfocused()"/>
+            <input type="text" id="rfid_code" placeholder="RFID DISCONNECTED">
         </aside>
 
         <main class="main_nav">
             <nav class="nav_buttons">
                 <div data-target="nav_home" data-fn="button" data-fnSelected="1">HOME</div>
-                <div data-target="nav_student" data-fn="button" data-fnSelected="0">STUDENTS</div>
-                <div data-target="nav_teacher" data-fn="button" data-fnSelected="0">TEACHERS</div>
-                <div data-target="nav_staff" data-fn="button" data-fnSelected="0">STAFF</div>
-                <div data-target="nav_misc" data-fn="button" data-fnSelected="0" style="font-size: 20px; padding-top: 34px;">MISCELLANEOUS</div>
+                <div data-target="nav_records" data-fn="button" data-fnSelected="0">RECORDS</div>
+                <div data-target="nav_misc" data-fn="button" data-fnSelected="0" style="font-size: 18px; padding-top: 35px;">MISCELLANEOUS</div>
             </nav>
             <section class="nav_lists">
                 <div class="nav_home" data-navList data-show="1">
@@ -93,26 +97,163 @@
                         <img src="../favicon.ico" alt="hta_logo">
                     </span>
                 </div>
-                <div class="nav_student" data-navList data-show="0">
-                    [list for students records etc | students attendance]
+
+                <div class="nav_records" data-navList data-show="0">
+
+                    FIRST SEM:
+                    <div class="divTable" style="border: 3px solid #000;">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell">SUBJECTS</div>
+                                <div class="divTableCell">MID TERM</div>
+                                <div class="divTableCell">FINAL TERM</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PROGRAMMING 1</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">EARTH AND LIFE SCIENCE</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PERSONAL DEVELOPMENT/CHRISTIAN LIVING</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">ORAL COMMUNICATION</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">ENGLISH FOR ACADEMIC AND PROFESSION</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">UNDERSTANDING CULTURE AND SOCIAL POLITICS</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">GENERAL MATH</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">KOMMUNIKASYON</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PHYSICAL EDUCATION</div>
+                                <div class="divTableCell" f_m>&nbsp;</div>
+                                <div class="divTableCell" f_f>&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+<br><br>
+                    SECOND SEM:
+                    <div class="divTable" style="border: 3px solid #000;">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell">SUBJECTS</div>
+                                <div class="divTableCell">MID TERM</div>
+                                <div class="divTableCell">FINAL TERM</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PROGRAMMING 2</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">ENGLISH, READING AND WRITING</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">21ST CENTURY LITERATURE FROM THE PHILIPPINES AND THE WORLD</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">EMPOWERMENT TECHNOLOGIES</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PERSONAL DEVELOPMENT/CHRISTIAN LIVING</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PRACTICAL RESEARCH 1</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PAGBASA AT PAGSUSURI NG IBA'T IBANG TEKSTO</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">ANIMATION 1</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PROBABLIITY AND STATISTICS</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">PHYSICAL EDUCATION</div>
+                                <div class="divTableCell" s_m>&nbsp;</div>
+                                <div class="divTableCell" s_f>&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="nav_teacher" data-navList data-show="0">
-                    [list for teachers records etc | teachers attendance]
-                </div>
-                <div class="nav_staff" data-navList data-show="0">
-                    [list for staff members etc | janitors/canteen]
-                </div>
+
                 <div class="nav_misc" data-navList data-show="0">
                     <div AboutSection>
+                        <h1>GROUP 5 MEMBERS</h1>
+                        <br>
+                        <h4>
+                            Kean James D. Pepito <i>[Leader]</i><br>
+                            Phaul Richard T. Rivera <br>
+                            Kiel Anthony C. Villanueva <br>
+                            Marco P. Sorio <br>
+                            Veronica W. Ubilas <br>
+                            John Ray D. Nabual <br>
+                            Julian  Richmond Herradura <br>
+                            Jade Alejandro
+                        </h4>
+                        <br>
+                        <br>
                         <h1>ABOUT</h1>
                         <br>
-                        <h3>
-                            This application was made for fun.
-                        </h3>
+                        <h4>
+                            This application is open-source and is free for others to use. <br>
+                            visit my github repository?
+                        </h4>
+                        <br>
+                        <a href="#" onclick="openBrowser.open()" id="linkRepo" title="Visit repository?"><img src="./bin/github.png" height="100"></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h1>Check out my other creations</h1>
+                        <br>
+                        
                     </div>
                 </div>
+
             </section>
         </main>
     </body>
-
 </html>
