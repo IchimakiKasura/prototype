@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Trinity Academy</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="../favicon.ico"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="strand.html">STRAND</a></li>
+                    <li><a href="mission.html">MISSION</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login/index.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Our Strands</h1>
+    </section>
+
+   <!------Strands------>
+
+   <section class="strand">
+    <h1>Strand We Offer</h1>
+    <p>The academic strand aims to equip students with the knowledge, skills, and critical thinking abilities <br> needed to succeed in higher education and pursue their chosen career paths effectively.</p>
+
+    <div class="row">
+        <div class="strand-col">
+            <img src="images/tvl.png" >
+            <h3>Technical-Vocational and Livelihood (TVL)</h3>
+            <p>Information and Communications Technology (ICT).
+                <br> 
+                 Home Economics and Livelihood Education (HELE).</p>
+        </div>
+        <div class="strand-col">
+            <img src="images/humss2.jpg" >
+            <h3>Humanities and Social Sciences (HUMSS)</h3>
+            <p>covers topics in the liberal arts, training students to think, write, and speak about various humanistic and societal concerns.</p>
+        </div>
+        <div class="strand-col">
+            <img src="images/stem2.jpg" >
+            <h3>Science, Technology, Engineering, and Mathematics (STEM)
+            </h3>
+            <p>Through the STEM strand, senior high school students are exposed to complex mathematical and science theories and <br>concepts which will serve as a foundation for their college courses.</p>
+        </div>
+        <div class="strand-col">
+            <img src="images/abm2.png" >
+            <h3>Accountancy, Business and Management (ABM)</h3>
+            <p> It focuses on teaching students the basic concepts of financial management, project management, marketing, human resources, modern management trends, organizational behavior, and more.</p>
+        </div>
+    </div>
+
+</section>
+
+    <!------facilities------>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>our facilities are designed to support the holistic development of our students, providing them with the resources and <br>opportunities they need to thrive academically,socially, and emotionally during their time with us.
+        </p>
+    
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>HTA LIBRARY</h3>
+                <p>The HTA Library provides access to digital resources, including e-books, online databases, and multimedia resources, further expanding the scope of knowledge available to our students. </p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/BT GYM.jpg">
+                <h3>HTA BT GYM</h3>
+                <p>The HTA BT Gym is a state-of-the-art fitness facility dedicated to promoting health, wellness, and physical fitness among students, faculty, and staff. Situated on our school campus, it serves as a hub for exercise, training, and recreational activities, fostering a vibrant and active community.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/HTA Audio Visual Room.jpg">
+                <h3>HTA Audio Visual Room (AVR)</h3>
+                <p> AVR is a dynamic space within our school campus dedicated to enhancing the learning experience through multimedia technology and interactive presentations. </p>
+            </div>
+        </div>    
+    
+    </section>
+
+        <!-------Footer------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Holy Trinity Academy offers the K–12 curriculum program. In the Senior High School Department, the school offers five academic tracks, <br>which prepares students for college and their chosen undergraduate program.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-tiktok"></i>
+            </div>
+        </section>
+
+  <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right  = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

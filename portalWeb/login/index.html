@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Holy Trinity Academy</title>
+        <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .bord-bx {
+                border: 1px solid white;
+                border-radius: 20px;
+                background: rgba(0, 0, 0, 0.4);
+                width: 20vw;
+                padding: 50px 20px 50px 20px;
+                box-shadow: 0 0 10px 5px black;
+            }
+
+            input {
+                color: white;
+                text-align: center;
+                font-size: 22px;
+                margin: 5px auto 5px auto;
+                border: 1px solid white;
+                border-radius: 5px;
+                width: 60%;
+                outline: none;
+                background-color: rgba(0, 0, 0, 0.4);
+                transition: border 0.1s;
+            }
+            input[type=submit] {
+                cursor: pointer;
+            }
+            input:hover {
+                border: 1px solid royalblue;
+            }
+            .returnA {
+                text-decoration: none;
+                color: royalblue;
+                font-style:italic;
+            }
+            .returnA:hover {
+                text-decoration:underline;
+            }
+        </style>
+    </head>
+
+    <body class="loaded">
+
+        <section class="header">
+            <div class="text-box bord-bx">
+                <img src="../../favicon.ico" alt="" height="150">
+                <br>
+                <h2>Login</h2>
+                <br>
+                <br>
+                <form action="" onsubmit="checkValue()">
+                    <input type="text" placeholder="Username">
+                    <br>
+                    <input type="password" placeholder="Password">
+                    <br>
+                    <input type="submit" value="Login">
+                </form>
+                <br>
+                For new users, Please use your ID number as username and enter the password that was given to you by our authorised personel.
+                <br>
+                <br>
+                <a class="returnA" href="../index.html" title="return to homepage">return to home</a>
+            </div>
+        </section>
+
+        <script>
+            function checkValue()
+            {
+
+            }
+        </script>
+    </body>
+
+</html>
