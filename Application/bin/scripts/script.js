@@ -1,4 +1,7 @@
+import { FirstSemester } from "./templates/first_sem_temp.js"
 import { scanner } from "./module/scanner.js"
+import { SecondSemester } from "./templates/second_sem_temp.js"
+import { Attendance } from "./templates/attendance_temp.js"
 
 scanner.onEnter()
 
@@ -29,3 +32,18 @@ document.querySelectorAll("[data-fn='button']").forEach(e=>{
 })
 
 document.querySelector("#rfid_code").addEventListener("blur", scanner.unfocused)
+
+// apply bloat codes idk
+export function applyTemplate(isStudent = true)
+{
+    document.querySelector(".first_sem_rec").innerHTML = FirstSemester.Schedule
+    document.querySelector(".second_sem_rec").innerHTML = SecondSemester.Schedule
+
+    if(!isStudent) return;
+    
+    document.querySelector(".first_sem_rec").innerHTML += FirstSemester.GradeTemplate
+    document.querySelector(".second_sem_rec").innerHTML += SecondSemester.GradeTemplate
+    document.querySelector(".attendance").innerHTML = Attendance.template
+}
+
+applyTemplate()

@@ -3,10 +3,10 @@ import { _schedule } from './schedules.js'
 
 const _students = {
     "17e92714": {
-        picture: "",
+        picture: "./bin/images/user pfp/416454603_25502837919307078_3034000156532422606_n.jpg",
         name: "KEAN JAMES D. PEPITO",
         year: "2023-2024",
-        section: "GRADE 11 - TV-ICT",
+        section: "GRADE 11 - TVL-ICT",
         person_no: "2019-000479",
         balance: "0",
         grades: {
@@ -62,56 +62,66 @@ const _students = {
             }
         },
         attendance: {
-            TOTAL_DAYS: 0,
-            TOTAL_PRESENT: 139,
-            TIMES_TARDY: 0
+            TOTAL_PRESET: [
+                14, // A
+                24, // S
+                24, // O
+                10, // N
+                10, // D
+                22, // J
+                20, // F
+                15, // M
+                0,  // A
+                0,  // M
+                0   // J
+            ]
         }
     },
     
     "9d3ceb45": {   // RIVERA
-        picture: "",
+        picture: "./bin/images/user pfp/412362167_1041678766885672_4608015601984196429_n.jpg",
         name: "PHAUL RICHARD T. RIVERA",
         year: "2023-2024",
-        section: "GRADE 11 - TV-ICT",
+        section: "GRADE 11 - TVL-ICT",
         person_no: "2023-000000",
         balance: "0",
         grades: {
             first_semester: {
                 MID: [
-                    /* PROGRAMMING 1 */          0,
-                    /* EARTH AND LIFE SCIENCE */ 0,
-                    /* PERSONAL DEVELOPMENT */   0,
-                    /* ORAL COMMUNICATION */     0,
-                    /* ENGLISH ACADEMIC */       0,
-                    /* UNDERSTANDING CULTURE */  0,
-                    /* GENERAL MATH */           0,
-                    /* KOMMUNIKASYON */          0,
-                    /* PHYSICAL EDUCATION */     0
+                    /* PROGRAMMING 1 */          87,
+                    /* EARTH AND LIFE SCIENCE */ 89,
+                    /* PERSONAL DEVELOPMENT */   86,
+                    /* ORAL COMMUNICATION */     82,
+                    /* ENGLISH ACADEMIC */       81,
+                    /* UNDERSTANDING CULTURE */  85,
+                    /* GENERAL MATH */           80,
+                    /* KOMMUNIKASYON */          87,
+                    /* PHYSICAL EDUCATION */     87
                 ],
                 FINAL: [
-                    /* PROGRAMMING 1 */          0,
-                    /* EARTH AND LIFE SCIENCE */ 0,
-                    /* PERSONAL DEVELOPMENT */   0,
-                    /* ORAL COMMUNICATION */     0,
-                    /* ENGLISH ACADEMIC */       0,
-                    /* UNDERSTANDING CULTURE */  0,
-                    /* GENERAL MATH */           0,
-                    /* KOMMUNIKASYON */          0,
-                    /* PHYSICAL EDUCATION */     0
+                    /* PROGRAMMING 1 */          89,
+                    /* EARTH AND LIFE SCIENCE */ 88,
+                    /* PERSONAL DEVELOPMENT */   86,
+                    /* ORAL COMMUNICATION */     91,
+                    /* ENGLISH ACADEMIC */       83,
+                    /* UNDERSTANDING CULTURE */  86,
+                    /* GENERAL MATH */           81,
+                    /* KOMMUNIKASYON */          89,
+                    /* PHYSICAL EDUCATION */     88
                 ]
             },
             second_semester: {
                 MID: [
-                    /* PROGRAMMING 2 */              0,
-                    /* READING AND WRITING */        0,
-                    /* 21ST CENTURY */               0,
-                    /* EMPOWERMENT TECHNOLOGY */     0,
-                    /* PERSONAL DEVELOPMENT */       0,
-                    /* PRACTICAL RESEARCH 1 */       0,
-                    /* PAGBASA AT PAGSUSURI */       0,
-                    /* ANIMATION 1 */                0,
-                    /* PROBABILITY AND STATISTICS */ 0,
-                    /* PHYISICAL EDUCATION */        0
+                    /* PROGRAMMING 2 */              85,
+                    /* READING AND WRITING */        79,
+                    /* 21ST CENTURY */               85,
+                    /* EMPOWERMENT TECHNOLOGY */     85,
+                    /* PERSONAL DEVELOPMENT */       89,
+                    /* PRACTICAL RESEARCH 1 */       80,
+                    /* PAGBASA AT PAGSUSURI */       91,
+                    /* ANIMATION 1 */                86,
+                    /* PROBABILITY AND STATISTICS */ 83,
+                    /* PHYISICAL EDUCATION */        84
                 ],
                 FINAL: [
                     /* PROGRAMMING 2 */              0,
@@ -128,56 +138,66 @@ const _students = {
             }
         },
         attendance: {
-            TOTAL_DAYS: 0,
-            TOTAL_PRESENT: 82,
-            TIMES_TARDY: 0
+            TOTAL_PRESET: [
+                14, // A
+                24, // S
+                24, // O
+                20, // N
+                8, // D
+                19, // J
+                22, // F
+                17, // M
+                0,  // A
+                0,  // M
+                0   // J
+            ]
         }
     },
 
     "77c5e013": {   // KIEL
-        picture: "",
+        picture: "./bin/images/user pfp/att.0LfoRkInTrY5dvC3-7dR7nuLNKBdZXQzm-JnXxn1Z6A.jpg",
         name: "KIEL ANTHONY C. VILLANUEVA",
         year: "2023-2024",
-        section: "GRADE 11 - TV-ICT",
+        section: "GRADE 11 - TVL-ICT",
         person_no: "2023-000000",
         balance: "0",
         grades: {
             first_semester: {
                 MID: [
-                    /* PROGRAMMING 1 */          0,
-                    /* EARTH AND LIFE SCIENCE */ 0,
-                    /* PERSONAL DEVELOPMENT */   0,
-                    /* ORAL COMMUNICATION */     0,
-                    /* ENGLISH ACADEMIC */       0,
-                    /* UNDERSTANDING CULTURE */  0,
-                    /* GENERAL MATH */           0,
-                    /* KOMMUNIKASYON */          0,
-                    /* PHYSICAL EDUCATION */     0
+                    /* PROGRAMMING 1 */          88,
+                    /* EARTH AND LIFE SCIENCE */ 90,
+                    /* PERSONAL DEVELOPMENT */   86,
+                    /* ORAL COMMUNICATION */     84,
+                    /* ENGLISH ACADEMIC */       85,
+                    /* UNDERSTANDING CULTURE */  86,
+                    /* GENERAL MATH */           88,
+                    /* KOMMUNIKASYON */          88,
+                    /* PHYSICAL EDUCATION */     89
                 ],
                 FINAL: [
-                    /* PROGRAMMING 1 */          0,
-                    /* EARTH AND LIFE SCIENCE */ 0,
-                    /* PERSONAL DEVELOPMENT */   0,
-                    /* ORAL COMMUNICATION */     0,
-                    /* ENGLISH ACADEMIC */       0,
-                    /* UNDERSTANDING CULTURE */  0,
-                    /* GENERAL MATH */           0,
-                    /* KOMMUNIKASYON */          0,
-                    /* PHYSICAL EDUCATION */     0
+                    /* PROGRAMMING 1 */          89,
+                    /* EARTH AND LIFE SCIENCE */ 91,
+                    /* PERSONAL DEVELOPMENT */   86,
+                    /* ORAL COMMUNICATION */     92,
+                    /* ENGLISH ACADEMIC */       87,
+                    /* UNDERSTANDING CULTURE */  90,
+                    /* GENERAL MATH */           87,
+                    /* KOMMUNIKASYON */          93,
+                    /* PHYSICAL EDUCATION */     89
                 ]
             },
             second_semester: {
                 MID: [
-                    /* PROGRAMMING 2 */              0,
-                    /* READING AND WRITING */        0,
-                    /* 21ST CENTURY */               0,
-                    /* EMPOWERMENT TECHNOLOGY */     0,
-                    /* PERSONAL DEVELOPMENT */       0,
-                    /* PRACTICAL RESEARCH 1 */       0,
-                    /* PAGBASA AT PAGSUSURI */       0,
-                    /* ANIMATION 1 */                0,
-                    /* PROBABILITY AND STATISTICS */ 0,
-                    /* PHYISICAL EDUCATION */        0
+                    /* PROGRAMMING 2 */              "CONFIDENTIAL",
+                    /* READING AND WRITING */        "CONFIDENTIAL",
+                    /* 21ST CENTURY */               "CONFIDENTIAL",
+                    /* EMPOWERMENT TECHNOLOGY */     "CONFIDENTIAL",
+                    /* PERSONAL DEVELOPMENT */       "CONFIDENTIAL",
+                    /* PRACTICAL RESEARCH 1 */       "CONFIDENTIAL",
+                    /* PAGBASA AT PAGSUSURI */       "CONFIDENTIAL",
+                    /* ANIMATION 1 */                "CONFIDENTIAL",
+                    /* PROBABILITY AND STATISTICS */ "CONFIDENTIAL",
+                    /* PHYISICAL EDUCATION */        "CONFIDENTIAL"
                 ],
                 FINAL: [
                     /* PROGRAMMING 2 */              0,
@@ -194,17 +214,27 @@ const _students = {
             }
         },
         attendance: {
-            TOTAL_DAYS: 0,
-            TOTAL_PRESENT: 82,
-            TIMES_TARDY: 0
+            TOTAL_PRESET: [
+                14, // A
+                24, // S
+                24, // O
+                21, // N
+                11, // D
+                22, // J
+                22, // F
+                17, // M
+                0,  // A
+                0,  // M
+                0   // J
+            ]
         }
     },
 
     "457512f6": {   // SORIO
-        picture: "",
+        picture: "./bin/images/user pfp/437178928_1109753623646622_712653660712889630_n.jpg",
         name: "MARCO P. SORIO",
         year: "2023-2024",
-        section: "GRADE 11 - TV-ICT",
+        section: "GRADE 11 - TVL-ICT",
         person_no: "2023-000299",
         balance: "0",
         grades: {
@@ -260,32 +290,49 @@ const _students = {
             }
         },
         attendance: {
-            TOTAL_DAYS: 0,
-            TOTAL_PRESENT: 155,
-            TIMES_TARDY: 0
+            TOTAL_PRESET: [
+                14, // A
+                24, // S
+                24, // O
+                21, // N
+                11, // D
+                22, // J
+                22, // F
+                17, // M
+                0,  // A
+                0,  // M
+                0   // J
+            ]
         }
     },
-}
 
-class grades {
-
-    constructor(value)
-    {
-        return _students[value].grades
+    "sample": {
+        picture: "../favicon.ico",
+        name: "HTA",
+        year: "--",
+        section: "--",
+        person_no: "--",
+        balance: "0",
+        grades: {
+            first_semester: {},
+            second_semester: {}
+        },
+        attendance: {
+            TOTAL_PRESET: [
+                30, // A
+                30, // S
+                30, // O
+                30, // N
+                30, // D
+                30, // J
+                30, // F
+                30, // M
+                30,  // A
+                30,  // M
+                30   // J
+            ]
+        }
     }
-}
-
-class attendance {
-
-    total_days;
-    total_present;
-    times_tardy;
-    
-    constructor(value)
-    {
-        this.total_present = _students[value].TOTAL_PRESENT;
-    }
-
 }
 
 export class students {
@@ -294,11 +341,12 @@ export class students {
     picture;
     name;
     year;
-    section
+    section;
     person_no;
     grades;
     attendance;
     schedule;
+    balance;
 
     isError = false;
 
@@ -312,8 +360,8 @@ export class students {
             this.person_no = _students[value].person_no;
             this.balance = "₱ "+_students[value].balance;
     
-            this.grades = new grades(value);
-            this.attendance = new attendance(value);
+            this.grades = _students[value].grades;
+            this.attendance = _students[value].attendance.TOTAL_PRESET;
 
             this.schedule = _schedule[_students[value].section]
         }

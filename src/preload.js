@@ -50,5 +50,7 @@ function checkUSB(data)
 }
 
 contextBridge.exposeInMainWorld("openBrowser", {
-    open() { exec('start https://github.com/IchimakiKasura/prototype') }
+    github() { exec('start https://github.com/IchimakiKasura/prototype') },
+    LauncherDL() { exec('start https://github.com/IchimakiKasura/Launcher-DL-3') },
+    CeeleLauncher() { exec('start https://github.com/IchimakiKasura/CeeleLauncher') },
 })
