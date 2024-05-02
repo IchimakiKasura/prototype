@@ -75,7 +75,19 @@ const _students = {
                 0,  // M
                 0   // J
             ]
-        }
+        },
+        act: [
+            "[21ST CENTURY] FILMING",
+            "[EMTECH] ICT PROJECT",
+            "[ANIMATION 1] COMIC",
+            "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
+            "[PR 1] RESEARCH DEFENSE",
+            "[PAP] KONSEPTONG PAPEL",
+            "[PERDEV] Line Line",
+            "[PERDEV] Dreamboard",
+            "[PERDEV] Values (Table)",
+            "[PERDEV] Write 10 Hobbies",
+        ]
     },
     
     "9d3ceb45": {   // RIVERA
@@ -151,7 +163,19 @@ const _students = {
                 0,  // M
                 0   // J
             ]
-        }
+        },
+        act: [
+            "[21ST CENTURY] FILMING",
+            "[EMTECH] ICT PROJECT",
+            "[ANIMATION 1] COMIC",
+            "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
+            "[PR 1] RESEARCH DEFENSE",
+            "[PAP] KONSEPTONG PAPEL",
+            "[PERDEV] Line Line",
+            "[PERDEV] Dreamboard",
+            "[PERDEV] Values (Table)",
+            "[PERDEV] Write 10 Hobbies",
+        ]
     },
 
     "77c5e013": {   // KIEL
@@ -227,7 +251,19 @@ const _students = {
                 0,  // M
                 0   // J
             ]
-        }
+        },
+        act: [
+            "[21ST CENTURY] FILMING",
+            "[EMTECH] ICT PROJECT",
+            "[ANIMATION 1] COMIC",
+            "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
+            "[PR 1] RESEARCH DEFENSE",
+            "[PAP] KONSEPTONG PAPEL",
+            "[PERDEV] Line Line",
+            "[PERDEV] Dreamboard",
+            "[PERDEV] Values (Table)",
+            "[PERDEV] Write 10 Hobbies",
+        ]
     },
 
     "457512f6": {   // SORIO
@@ -303,7 +339,19 @@ const _students = {
                 0,  // M
                 0   // J
             ]
-        }
+        },
+        act: [
+            "[21ST CENTURY] FILMING",
+            "[EMTECH] ICT PROJECT",
+            "[ANIMATION 1] COMIC",
+            "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
+            "[PR 1] RESEARCH DEFENSE",
+            "[PAP] KONSEPTONG PAPEL",
+            "[PERDEV] Line Line",
+            "[PERDEV] Dreamboard",
+            "[PERDEV] Values (Table)",
+            "[PERDEV] Write 10 Hobbies",
+        ]
     },
 
     "sample": {
@@ -331,7 +379,19 @@ const _students = {
                 30,  // M
                 30   // J
             ]
-        }
+        },
+        act: [
+            "[21ST CENTURY] FILMING",
+            "[EMTECH] ICT PROJECT",
+            "[ANIMATION 1] COMIC",
+            "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
+            "[PR 1] RESEARCH DEFENSE",
+            "[PAP] KONSEPTONG PAPEL",
+            "[PERDEV] Line Line",
+            "[PERDEV] Dreamboard",
+            "[PERDEV] Values (Table)",
+            "[PERDEV] Write 10 Hobbies",
+        ]
     }
 }
 
@@ -347,6 +407,7 @@ export class students {
     attendance;
     schedule;
     balance;
+    act;
 
     isError = false;
 
@@ -359,11 +420,13 @@ export class students {
             this.section = _students[value].section;
             this.person_no = _students[value].person_no;
             this.balance = "₱ "+_students[value].balance;
+            this.act = _students[value].act
     
             this.grades = _students[value].grades;
             this.attendance = _students[value].attendance.TOTAL_PRESET;
 
             this.schedule = _schedule[_students[value].section]
+
         }
         catch
         {

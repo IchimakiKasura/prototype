@@ -241,6 +241,16 @@ body {
         .sched_body {
             display: table-row-group;
 
+            .act_row {
+                padding: 10px;
+                font-size: 20px;
+                &:hover {
+                    box-shadow: 0 0 10px 1px white;
+                    background-color: white;
+                    color: black;
+                }
+            }
+
             .sched_row {
                 display: table-row;
                 transition: box-shadow .1s;

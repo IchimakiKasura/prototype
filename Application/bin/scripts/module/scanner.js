@@ -5,6 +5,7 @@ import { _grades } from "./rush/grades.js";
 import { _schedule } from "./rush/schedules.js";
 import { _teacher, teacher } from "./rush/teacher.js";
 import { applyTemplate } from "../script.js";
+import { act_peta } from "../templates/act_peta_temp.js";
 
 export class scanner
 {
@@ -71,6 +72,12 @@ export class scanner
 
     static #student(data = new students, rfid = Element)
     {
+        let actP = document.querySelector(".activities")
+
+        actP.style = "border: 2px solid black"
+        actP.innerHTML = act_peta.template;
+        document.querySelector(".attendance").style = "border: 2px solid black"
+        
         document.querySelector("#person_picture").src = data.picture ? data.picture : "bin/images/info_DEFAULT_PFP.svg";
         
         this.info_temp.type(data.type);
@@ -106,6 +113,8 @@ export class scanner
                 document.querySelector("#class_adviser_2").textContent = tc.name;
         })
 
+        data.act.forEach(names=>document.querySelector("[data-actPeta]").innerHTML += act_peta.setActivity(names))
+
         this.#placevalues(data);
 
         rfid.value = ""
@@ -113,6 +122,11 @@ export class scanner
 
     static #teacher(data = new teacher, rfid = Element)
     {
+        let actP = document.querySelector(".activities")
+
+        actP.style = "border: none"
+        actP.innerHTML = ""
+        document.querySelector(".attendance").style = "border: none"
         document.querySelector("#person_picture").src = data.picture ? data.picture : "bin/images/info_DEFAULT_PFP.svg";
         
         this.info_temp.type(data.type);
