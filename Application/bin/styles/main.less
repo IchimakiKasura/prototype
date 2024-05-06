@@ -1,0 +1,245 @@
+:root {
+    // easily change values without SCROLLING DOWN
+    --INFORMATION-BACKGROUND: url(../images/info_BG.jpg);
+    --APP-BACKGROUND-COLOR: rgb(202, 206, 221);
+}
+
+@font-face {
+    font-family: "College";
+    src: url(../fonts/College.ttf);
+}
+* {
+    margin: 0;
+    font-family: Tahoma;
+}
+
+body {
+    margin: 12px;
+    background-color: var(--APP-BACKGROUND-COLOR);
+    overflow: hidden;
+    display: flex;
+}
+
+.informations {
+    position: relative;
+    background-image: var(--INFORMATION-BACKGROUND);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 10px;
+    width: 300px;
+    height: 97vh;
+    text-align: center;
+    box-shadow: 0 0 10px 0 black;
+    margin-right: 25px;
+    overflow: hidden;
+
+    .info_bg {
+        position: absolute;
+        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(65, 105, 225, 1));
+        border-radius: 10px;
+        height: inherit;
+        width: inherit;
+    
+        #hta_icon {
+            position: absolute;
+            top: 155px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 30px;
+        }
+
+        #person_picture {
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 0 white;
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        .person_informations{
+            color: white;
+            text-shadow: 0 0px 5px black;
+
+            hr {
+                margin: auto;
+                box-shadow: 0 0 2px 0 black;
+                width: 70%;
+            }
+        }
+    }
+
+    #rfid_code {
+        position: absolute;
+        width: 95%;
+        height: 49px;
+        font-size: 25px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        opacity: 0.2;
+        transition: opacity 0.5s;
+        left: 5.5px;
+        bottom: 5px;
+
+        &::placeholder {
+            text-align: center;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.main_nav {
+
+    [data-show="0"]
+    {
+        display: none;
+    }
+    [data-show="1"]
+    {
+        display: block;
+    }
+
+    .nav_buttons {
+        display: flex;
+        z-index: -1;
+        
+        [data-fn="button"] {
+            color: white;
+            font-family: "College";
+            background: rgb(222, 222, 222);
+            padding: 30px;
+            -webkit-user-select: none;
+            user-select: none;
+            width: 124px;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
+
+            &:nth-child(1)
+            {
+                border-radius: 20px 0 0 0;
+            }
+    
+            &:nth-child(3)
+            {
+                border-radius: 0 20px 0 0;
+            }
+        }
+
+        [data-fnSelected="1"]
+        {
+            background: white !important;
+            color: royalblue;
+        }
+    }
+
+    .nav_lists {
+        z-index: 2;
+        margin-left: -5px;
+        background: linear-gradient(white, royalblue);
+        border-radius: 5px;
+        width: 73vw;
+        height: 84vh;
+        box-shadow: 0 0 10px 0 black;
+    }
+
+    .nav_home {
+        
+        div {
+            z-index: 1;
+            position: absolute;
+            text-align: center;
+            font-size: 60px;
+
+            h1 {
+                font-family: "College";
+
+                hr {
+                    border-color: black;
+                    margin: 0 auto;
+                    width: 300px;
+                }
+
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+
+        span {
+            // background: red;
+            height: 84vh;
+            width: 73vw;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 450px;
+                opacity: 0.09;
+            }
+        }
+    }
+
+    .nav_records {
+        padding: 10px;
+        padding-right: 15px;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 81vh;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .nav_misc {
+        padding: 30px;
+
+        h1 {
+            font-size: 40px;
+            font-family: "College";
+        }
+        
+        [AboutSection] {
+            overflow: hidden;
+            overflow-y: scroll;
+            height: 75vh;
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}
+
+.link_project {
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 0 10px 10px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.link_project:hover {
+    background-color: rgba(255, 192, 203, 0.5);
+    box-shadow: 0 0 10px 5px rgba(255, 192, 203, 0.5);
+}
+
+.link_project:active {
+    background-color: pink;
+    box-shadow: 0 0 10px 5px pink;
+}

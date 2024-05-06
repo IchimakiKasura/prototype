@@ -7,6 +7,10 @@ const _students = {
         name: "KEAN JAMES D. PEPITO",
         year: "2023-2024",
         section: "GRADE 11 - TVL-ICT",
+        web: {
+            grade: "ELEVEN",
+            section: "TVL - ICT"
+        },
         person_no: "2019-000479",
         balance: "0",
         grades: {
@@ -87,15 +91,20 @@ const _students = {
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
+            "[PERDEV] INTERVIEW VIDEO",
         ]
     },
-    
+
     "9d3ceb45": {   // RIVERA
         picture: "./bin/images/user pfp/412362167_1041678766885672_4608015601984196429_n.jpg",
         name: "PHAUL RICHARD T. RIVERA",
         year: "2023-2024",
         section: "GRADE 11 - TVL-ICT",
-        person_no: "2023-000000",
+        web: {
+            grade: "ELEVEN",
+            section: "TVL - ICT"
+        },
+        person_no: "2023-000243",
         balance: "0",
         grades: {
             first_semester: {
@@ -175,6 +184,7 @@ const _students = {
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
+            "[PERDEV] INTERVIEW VIDEO",
         ]
     },
 
@@ -183,7 +193,11 @@ const _students = {
         name: "KIEL ANTHONY C. VILLANUEVA",
         year: "2023-2024",
         section: "GRADE 11 - TVL-ICT",
-        person_no: "2023-000000",
+        web: {
+            grade: "ELEVEN",
+            section: "TVL - ICT"
+        },
+        person_no: "2023-000168",
         balance: "0",
         grades: {
             first_semester: {
@@ -263,6 +277,7 @@ const _students = {
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
+            "[PERDEV] INTERVIEW VIDEO",
         ]
     },
 
@@ -271,6 +286,10 @@ const _students = {
         name: "MARCO P. SORIO",
         year: "2023-2024",
         section: "GRADE 11 - TVL-ICT",
+        web: {
+            grade: "ELEVEN",
+            section: "TVL - ICT"
+        },
         person_no: "2023-000299",
         balance: "0",
         grades: {
@@ -351,6 +370,7 @@ const _students = {
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
+            "[PERDEV] INTERVIEW VIDEO",
         ]
     },
 

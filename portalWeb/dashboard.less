@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Adobe hebrew";
+}
+
+body {
+    display: flex;
+    background: rgb(202, 206, 221);
+}
+
+.info {
+    position: fixed;
+    color: white;
+    background: #41444a;
+    width: 400px;
+    height: 100vh;
+    box-shadow: 0 0 5px 2px black;
+    overflow: hidden;
+    z-index: 1;
+
+    .pfp {
+        height: 220px;
+        img {
+            height: 150px;
+            top: 12%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            text-align: center;
+            border-radius: 100%;
+            box-shadow: 0 0 5px 1px black;
+        }
+    }
+
+    p, h1 {
+        text-align: center;
+    }
+
+    button {
+        position: relative;
+        color: inherit;
+        width: 101%;
+        left: -1px;
+        text-align: left;
+        padding: 20px;
+        margin: -1px 0 0 0;
+        font-size: 30px;
+        border: 1px solid gray;
+        background: transparent;
+        transition: background-color 0.1s;
+        cursor: pointer;
+
+        &[data-clicked="1"] {
+            background: gray;
+        }
+        
+        &[data-clicked="0"] {
+            background: transparent;
+        }
+
+        &:hover {
+            background-color: gray;
+        }
+
+    }
+
+    .info_footer {
+        position: absolute;
+        bottom: 0%;
+        left: 67%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    padding-left: 400px;
+
+    .bg {
+        position: fixed;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%,-50%);
+        user-select: none;
+        pointer-events: none;
+
+        img {
+            height: 40vw;
+            opacity: 0.1;
+        }
+    }
+
+    section {
+        position: relative;
+
+
+        &[data-show="1"]{
+            display: block;
+        }
+        
+        &[data-show="0"]{
+            display: none;
+        }
+
+        .section_main {
+            margin: 100px;
+
+            .box
+            {
+                padding: 20px;
+                margin: 20px;
+                border-radius: 10px;
+                width: 50vw;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.5);
+                transition: padding .1s;
+                box-shadow: 0 0 10px 1px black;
+
+                &:hover {
+                    padding: 30px;
+                    
+                    h2 {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .Home {
+
+    }
+
+    .Card {
+
+    }
+
+    .Schedules {
+
+    }
+
+    .Tasks {
+        
+    }
+
+}

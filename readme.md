@@ -23,3 +23,6 @@ Its currently using *electron.js* because it's easy to design it using html and 
 <a href="https://github.com/electron/electron/issues/29868#issuecomment-869049066">[<i>Windows Defender realtime protection causes slow boot for utility process</i>]</a>
 
     - Possible fix that it needs to be signed but since this is only a project prototype, I have no intentions of buying a certificate to make this application verified.
+
+# Web Portal
+- When running opening the Web Portal html, it must be running on a localhost server unless the

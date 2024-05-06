@@ -15,13 +15,13 @@ export class scanner
     static unfocused()
     {
         // literally, what the actual fuck that is shit is a fix on that non-changing title bug?
-        document.title = document.title.replace(/READY TO SCAN/g, "NOT READY TO SCAN")
+        document.title = document.title.replace(/\| READY TO SCAN \|/g, "| NOT READY TO SCAN |")
         document.querySelector("#rfid_code").value = "" 
     }
 
     static focused()
     {
-        document.title = document.title.replace(/NOT READY TO SCAN/g, "READY TO SCAN")
+        document.title = document.title.replace(/\| NOT READY TO SCAN \|/g, "| READY TO SCAN |")
         document.querySelector("#rfid_code").focus()
     }
 

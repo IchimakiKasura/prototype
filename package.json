@@ -86,8 +86,7 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "make": "electron-forge make",
-    "package": "electron-forge package",
-    "lss": "lessc LESS/main.less Application/bin/styles/main.css"
+    "package": "electron-forge package"
   },
   "keywords": [],
   "author": "Ichimaki Kasura",

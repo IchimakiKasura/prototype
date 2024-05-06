@@ -16,7 +16,7 @@ function cW() {
         resizable: false,
         darkTheme: true,
         icon: "favicon.ico",
-        title: "Holy Trinity Academy [DATABASE] | (LOADING) [ RFID READER STATUS: DISCONNECTED ]",
+        title: "Holy Trinity Academy | (LOADING) | [ RFID READER STATUS: DISCONNECTED ]",
         show: false
     });
 
