@@ -33,16 +33,16 @@ export class scanner
             if(k.code!='Enter') return;
             
             // avoid double enters/tap?
-            if(this.#lastID == rfid.value)
+            if(this.#lastID == rfid.value.toLowerCase())
             {
                 rfid.value = ""
                 return
             }
     
-            this.#lastID = rfid.value;
+            this.#lastID = rfid.value.toLowerCase();
 
-            let template1 = new students(rfid.value)
-            let template2 = new teacher(rfid.value)
+            let template1 = new students(this.#lastID)
+            let template2 = new teacher(this.#lastID)
             let auto = document.querySelector("[data-target=nav_records]");
             
             // resets record tab
@@ -50,10 +50,12 @@ export class scanner
 
             if(!template1.isError) {
                 auto.click()
+                rfid.value = ""
                 return this.#student(template1, rfid);
             } else if(!template2.isError) {
                 applyTemplate(false)
                 auto.click()
+                rfid.value = ""
                 return this.#teacher(template2, rfid);
             } else {
                 document.querySelector("#person_picture").src = "bin/images/info_DEFAULT_PFP.svg";
@@ -70,7 +72,7 @@ export class scanner
         })
     }
 
-    static #student(data = new students, rfid = Element)
+    static #student(data = new students)
     {
         let actP = document.querySelector(".activities")
 
@@ -116,11 +118,9 @@ export class scanner
         data.act.forEach(names=>document.querySelector("[data-actPeta]").innerHTML += act_peta.setActivity(names))
 
         this.#placevalues(data);
-
-        rfid.value = ""
     }
 
-    static #teacher(data = new teacher, rfid = Element)
+    static #teacher(data = new teacher)
     {
         let actP = document.querySelector(".activities")
 
@@ -147,8 +147,6 @@ export class scanner
         document.querySelector("#class_adviser_2").textContent = data.second_sem_advisory;
 
         document.querySelector(".attendance").innerHTML = "";
-
-        rfid.value = ""
     }
 
     static #placevalues(data = new students)

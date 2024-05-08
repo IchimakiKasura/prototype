@@ -22,10 +22,10 @@
                 <h2>Login</h2>
                 <br>
                 <br>
-                <form action="" onsubmit="checkValue()">
-                    <input type="text" placeholder="Username">
+                <form name="htaForm" action="../dashboard.html" onsubmit="return checkValue()">
+                    <input name="htaUsername" type="text" placeholder="Username">
                     <br>
-                    <input type="password" placeholder="Password">
+                    <input name="htaPassword" type="password" placeholder="Password">
                     <br>
                     <input type="submit" value="Login">
                 </form>
@@ -38,9 +38,53 @@
         </section>
 
         <script>
-            function checkValue()
-            {
+            function checkValue(){
+                let user = document.forms["htaForm"]["htaUsername"].value
+                let pass = document.forms["htaForm"]["htaPassword"].value
+                
+                if(user|pass == "") return false;
 
+                let isError = false;
+
+                switch(user)
+                {
+                    case "2019-000479":
+                        switch(pass)
+                        {
+                            case "ichi123":
+                                document.querySelector("[name='htaPassword']").value = btoa(pass);
+                                return true;
+                            default: isError = true;
+                        }
+                    case "2023-000168":
+                        switch(pass)
+                        {
+                            case "kiel123":
+                                document.querySelector("[name='htaPassword']").value = btoa(pass);
+                                return true;
+                            default: isError = true;
+                        }
+                    case "2023-000243":
+                        switch(pass)
+                        {
+                            case "rivera123":
+                                document.querySelector("[name='htaPassword']").value = btoa(pass);
+                                return true;
+                            default: isError = true;
+                        }
+                    case "2023-000299":
+                        switch(pass)
+                        {
+                            case "sorio123":
+                                document.querySelector("[name='htaPassword']").value = btoa(pass);
+                                return true;
+                            default: isError = true;
+                        }
+                    default: isError = true;
+                }
+
+                if(isError) alert("Wrong credentials!")
+                return false;
             }
         </script>
     </body>

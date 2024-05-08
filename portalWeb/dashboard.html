@@ -6,23 +6,24 @@
         <title>Holy Trinity Academy | Dashboard</title>
         <link rel="stylesheet/less" href="dashboard.less">
         <link rel="stylesheet/less" href="../Application/bin/styles/table.less">
+        <link rel="stylesheet/less" href="../Application/bin/styles/customAttributes.css">
         <script src="../src/less.js"></script>
-        <script defer src="dashboard.js"></script>
+        <script defer type="module" src="dashboard.js"></script>
     </head>
     <body>
         <aside class="info">
             <div class="pfp">
-                <img src="../Application/bin/images/user pfp/412362167_1041678766885672_4608015601984196429_n.jpg" alt="profile_picture">
+                <img id="userpfp" src="../Application/bin/images/user pfp/412362167_1041678766885672_4608015601984196429_n.jpg" alt="profile_picture">
             </div>
             <p>Welcome back!</p>
-            <h1>NAME TEMPLATE</h1>
+            <h1 id="nameplate">NAME TEMPLATE</h1>
             <br>
             <br>
             <button data-clicked="1" onclick="show.Home(this)">Home</button><br>
             <button data-clicked="0" onclick="show.Card(this)">Card</button><br>
             <button data-clicked="0" onclick="show.Sched(this)">Schedules</button><br>
             <button data-clicked="0" onclick="show.Tasks(this)">Tasks</button><br>
-            <button data-clicked="0" >Logout</button><br>
+            <button data-clicked="0" onclick="location.href='./login/index.html'">Logout</button><br>
             <div class="info_footer">
                 &copy; 2024. All rights Unreserved.
             </div>
@@ -33,34 +34,34 @@
             <div class="bg">
                 <img src="../hta logo.png">
             </div>
-            <section class="Home" data-show="0">
+            <section class="Home" data-show="1">
                 <div class="section_main">
                     <div class="home_info">
                         <h1 style="font-size: 3vw;">User's Information</h1>
                         <div class="box">
                             <h1>ID NUMBER</h1>
                             <hr>
-                            <h2 id="info_number">wa</h2>
+                            <h2 id="info_number"></h2>
                         </div>
                         <div class="box">
                             <h1>GRADE</h1>
                             <hr>
-                            <h2 id="info_grade">ELEVEN</h2>
+                            <h2 id="info_grade"></h2>
                         </div>
                         <div class="box">
                             <h1>SECTION | STRAND</h1>
                             <hr>
-                            <h2 id="info_section">TVL - ICT</h2>
+                            <h2 id="info_section"></h2>
                         </div>
                         <div class="box">
                             <h1>SCHOOL YEAR</h1>
                             <hr>
-                            <h2 id="info_number">2023-2024</h2>
+                            <h2 id="info_year"></h2>
                         </div>
                         <div class="box">
                             <h1>REMAINING BALANCE</h1>
                             <hr>
-                            <h2 id="info_number">0</h2>
+                            <h2 id="info_balance">0</h2>
                         </div>
                     </div>
                     <div class="home_attendance semester_record" style="border: none;">
@@ -136,7 +137,7 @@
             <section class="Card"  data-show="0">
                 <div class="section_main semester_record" style="border: none;">
                     <h1 ctr gtmp style="font-size: 50px">FIRST SEMESTER</h1>
-                    <div class="divTable" style="color: white; border: 3px solid #000; border-radius: 10px;font-size: 30px; background: rgba(0,0,0,0.2);">
+                    <div class="divTable" style="color: black; border: 3px solid #000; border-radius: 10px;font-size: 30px; background: rgba(0,0,0,0.2);">
                         <div class="divTableBody" data-grade-f>
                             <div class="divTableRow">
                                 <div class="divTableCell" style="border-top-left-radius: 5px;">SUBJECTS</div>
@@ -148,8 +149,8 @@
                     <br>
                     <br>
                     <h1 ctr gtmp style="font-size: 50px">SECOND SEMESTER</h1>
-                    <div class="divTable" style="color: white; border: 3px solid #000; border-radius: 10px; font-size: 30px; background: rgba(0,0,0,0.2);">
-                        <div class="divTableBody" data-grade-f>
+                    <div class="divTable" style="color: black; border: 3px solid #000; border-radius: 10px; font-size: 30px; background: rgba(0,0,0,0.2);">
+                        <div class="divTableBody" data-grade-s>
                             <div class="divTableRow">
                                 <div class="divTableCell" style="border-top-left-radius: 5px;">SUBJECTS</div>
                                 <div class="divTableCell">MID TERM</div>
@@ -160,7 +161,7 @@
                 </div>
             </section>
 
-            <section class="Schedules"  data-show="1">
+            <section class="Schedules" data-show="0">
                 <div class="section_main semester_record" style="border: none;">
                     <h1 ctr gtmp style="font-size: 50px">FIRST SEMESTER</h1>
                     <br>
@@ -199,7 +200,7 @@
                     <br>
                     <br>
                     <br>
-                    <h1 ctr gtmp style="font-size: 50px">FIRST SEMESTER</h1>
+                    <h1 ctr gtmp style="font-size: 50px">SECOND SEMESTER</h1>
                     <br>
                     <div class="semester_schedule" style="border: 3px solid #000; border-radius: 10px; background: rgba(0,0,0,0.2);">
                         <div class="sched_body">
@@ -216,19 +217,19 @@
                                 <div class="sched_cell">2:30-3:30</div>
                                 <div class="sched_cell">3:30-4:30</div>
                             </div>
-                            <div class="sched_row" data-sched-f>
+                            <div class="sched_row" data-sched-s>
                                 <div class="sched_cell">MONDAY</div>
                             </div>
-                            <div class="sched_row" data-sched-f>
+                            <div class="sched_row" data-sched-s>
                                 <div class="sched_cell">TUESDAY</div>
                             </div>
-                            <div class="sched_row" data-sched-f>
+                            <div class="sched_row" data-sched-s>
                                 <div class="sched_cell">WEDNESDAY</div>
                             </div>
-                            <div class="sched_row" data-sched-f>
+                            <div class="sched_row" data-sched-s>
                                 <div class="sched_cell">THURSDAY</div>
                             </div>
-                            <div class="sched_row" data-sched-f>
+                            <div class="sched_row" data-sched-s>
                                 <div class="sched_cell">FRIDAY</div>
                             </div>
                         </div>
@@ -239,9 +240,8 @@
             <section class="Tasks"  data-show="0">
                 <div class="section_main semester_record" style="border: none">
                     <h1 ctr style="font-size: 50px;">PETA / ACTIVITIES</h1>
-                    <div class="semester_schedule" style="border: 3px solid #000; border-radius: 10px; background: rgba(0,0,0,0.2);">
+                    <div class="semester_schedule" style="border: 3px solid #000; border-radius: 10px; background: rgba(0,0,0,0.2)">
                         <div class="sched_body" data-actPeta>
-                            <div class="act_row">${name}</div>
                         </div>
                     </div>
                 </div>

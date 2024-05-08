@@ -76,7 +76,7 @@ export const _teacher = {
 }
 
 export class teacher {
-    type = "teacher";
+    type = "Teacher";
     picture;
     name;
     section;

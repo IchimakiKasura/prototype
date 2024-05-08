@@ -12,7 +12,7 @@ const _students = {
             section: "TVL - ICT"
         },
         person_no: "2019-000479",
-        balance: "0",
+        balance: "18000",
         grades: {
             first_semester: {
                 MID: [
@@ -85,9 +85,8 @@ const _students = {
             "[EMTECH] ICT PROJECT",
             "[ANIMATION 1] COMIC",
             "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
-            "[PR 1] RESEARCH DEFENSE",
             "[PAP] KONSEPTONG PAPEL",
-            "[PERDEV] Line Line",
+            "[PERDEV] Timeline",
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
@@ -178,9 +177,8 @@ const _students = {
             "[EMTECH] ICT PROJECT",
             "[ANIMATION 1] COMIC",
             "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
-            "[PR 1] RESEARCH DEFENSE",
             "[PAP] KONSEPTONG PAPEL",
-            "[PERDEV] Line Line",
+            "[PERDEV] Timeline",
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
@@ -271,9 +269,8 @@ const _students = {
             "[EMTECH] ICT PROJECT",
             "[ANIMATION 1] COMIC",
             "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
-            "[PR 1] RESEARCH DEFENSE",
             "[PAP] KONSEPTONG PAPEL",
-            "[PERDEV] Line Line",
+            "[PERDEV] Timeline",
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
@@ -366,7 +363,7 @@ const _students = {
             "[COMPROG 2] POS (PAYMENT ONLINE SYSTEM)",
             "[PR 1] RESEARCH DEFENSE",
             "[PAP] KONSEPTONG PAPEL",
-            "[PERDEV] Line Line",
+            "[PERDEV] Timeline",
             "[PERDEV] Dreamboard",
             "[PERDEV] Values (Table)",
             "[PERDEV] Write 10 Hobbies",
@@ -417,7 +414,8 @@ const _students = {
 
 export class students {
 
-    type = "student";
+    static allStudents = _students; 
+    type = "Student";
     picture;
     name;
     year;
@@ -428,8 +426,11 @@ export class students {
     schedule;
     balance;
     act;
+    web_grade;
+    web_section;
 
     isError = false;
+    
 
     constructor(value)
     {
@@ -441,6 +442,8 @@ export class students {
             this.person_no = _students[value].person_no;
             this.balance = "₱ "+_students[value].balance;
             this.act = _students[value].act
+            this.web_grade = _students[value].web.grade;
+            this.web_section = _students[value].section;
     
             this.grades = _students[value].grades;
             this.attendance = _students[value].attendance.TOTAL_PRESET;
@@ -453,5 +456,4 @@ export class students {
             this.isError = true;
         }
     }
-
 }
